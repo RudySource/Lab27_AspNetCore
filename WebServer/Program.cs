@@ -71,12 +71,12 @@ app.MapFallback(() => Results.NotFound(new {
 //     IsActive = true
 // });
 
-// app.MapGet("/subjects", () => new[] {
-//     "РПМ",
-//     "РПМ",
-//     "ИСРПО",
-//     "СП",
-// });
+app.MapGet("/subjects", () => new[] {
+    "РПМ",
+    "РПМ",
+    "ИСРПО",
+    "СП",
+});
 
 // app.MapGet("/product/{id}", (int id) => new Product(
 //     Id: id,
